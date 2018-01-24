@@ -5,42 +5,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Logrin | Tiagram</title>
+    <title>Feed | Tiagram</title>
 </head>
 
 <body>
-
-    <main class="login">
-        <div class="login__column">
-            <img src="image/phoneimage.png" alt="Phone" title="Phone">
+    <header class="header">
+        <div class="header__logo">
+            <img src="image/logo_header.png" class="header__image">
         </div>
-        <div class="login__column">
-            <div class="login__box">
-                <img src="image/logo.png" alt="Logo" class="login__logo">
+        <form>
+            <input placeholder="Search" type="text" name="search">
+        </form>
+        <nav class="header__navigation">
+            <ul class="header__list">
+                <li class="header__list-item">
+                    <a href="#" class="header__link">
+                        <i class="fa fa-compass" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="header__list-item">
+                    <a href="#" class="header__link">
+                        <i class="fa fa-heart-o" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="header__list-item">
+                    <a href="#" class="header__link">
+                        <i class="fa fa-user-o" aria-hidden="true"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
 
-                <form action="feed.html" method="post">
-                    <input placeholder="username" type="text" name="username" required>
-                    <input placeholder="password" type="password" name="password" required>
-                    <input type="submit" value="Log In">
-                </form>
-
-                <span class="login__or">or</span>
-                <a href="#" class="login__link login__link--dark">
-                    <i class="fa fa-facebook-square" aria-hidden="true"></i>Log in with Facebook</a>
-                <a href="#" class="login__link login__link--dart login__link--small">Forgot password?</a>
-            </div>
-            <div class="login__box">
-                <span>Don't have an account?</span>
-                <a href="#" class="login__link">Sign up</a>
-            </div>
-            <div class="login__box login__box--transparent">
-                <span>Get the app.</span>
-                <div class="login__appstores">
-                    <img src="image/ios.png" alt="iPhone" class="login__appstores">
-                    <img src="image/android.png " alt="Android " class="login__appstores">
-                </div>
-            </div>
-        </div>
     </main>
 
     <footer class="footer">
