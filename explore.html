@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Feed | Tiagram</title>
+    <title>Explore | Tiagram</title>
 </head>
 
 <body>
@@ -39,44 +39,21 @@
         </nav>
     </header>
 
-    <main class="feed">
-        <div class="photo">
-            <header class="photo__header">
-                <img src="image/user.jpg" class="header__image">
-                <a href="#" class="header__user">user name</a>
-            </header>
-            <img src="image/photo.png" class="photo__image">
-            <div class="photo__text">
-                <div class="photo__icons">
-                    <a href="#" class="photo__icon">
-                        <i class="fa fa-heart" aria-hidden="true"></i>
-                    </a>
-                    <a href="#" class="photo__icon">
-                        <i class="fa fa-comment-o" aria-hidden="true"></i>
-                    </a>
+    <main class="explore">
+        <ul class="explore__users">
+            <li class="explore__user">
+                <div class="explore__column">
+                    <img src="image/user.jpg" class="explore__image">
+                    <div class="explore__user">
+                        <span class="explore__username">user name</span>
+                        <span class="explore__fullname">fullname</span>
+                    </div>
                 </div>
-                <div class="photo__icons">
-                    <a href="#" class="photo__icon">
-                        <i class="fa fa-bookmark-o" aria-hidden="true"></i>
-                    </a>
+                <div class="explore__column">
+                    <button class="explore__button">Follow</button>
                 </div>
-                <span class="photo__views">14,490 views</span>
-                <ul class="photo__comments">
-                    <li class="photo__comment">
-                        <span class="photo__comment--name">user name</span>
-                        comment something
-                    </li>
-                </ul>
-                <span class="photo__time">2 days ago</span>
-                <div class="textarea">
-                    <textarea class="text"></textarea>
-                    <a href="#" class="textarea__icon">
-                        <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
-                    </a>
-                </div>
-
-            </div>
-        </div>
+            </li>
+        </ul>
     </main>
 
     <footer class="footer">
