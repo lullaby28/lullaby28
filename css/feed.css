@@ -1,0 +1,107 @@
+.feed {
+  width: 100%;
+  max-width: 615px;
+}
+
+.feed .photo {
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  background-color: white;
+  border-radius: 3px;
+  margin-top: 60px;
+}
+
+.photo .photo__header {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.photo__header .photo__avatar {
+  width: 35px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.photo__user .photo__username {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.photo__user .photo__location {
+  color: #999;
+  font-size: 13px;
+}
+
+.photo img {
+  max-width: 100%;
+}
+
+.photo .photo__actions {
+  width: 100%;
+  padding: 15px 15px 0px 15px;
+}
+
+.photo__actions > * {
+  margin-bottom: 10px;
+}
+
+.photo__actions .photo__click {
+  display: flex;
+  justify-content: space-between;
+}
+
+.photo__actions .photo__click:hover {
+  cursor: pointer;
+}
+
+.photo__actions .photo__action {
+  font-size: 23px;
+  margin-right: 10px;
+}
+
+.photo__actions .photo__likes {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.photo__comments .photo__comment {
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.photo__comment .photo__comment-author {
+  font-weight: bold;
+}
+
+.photo__actions .photo__date {
+  font-size: 10px;
+  color: #999;
+  text-transform: uppercase;
+}
+
+.photo__actions .photo__add-comment {
+  width: 100%;
+  font-size: 18px;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  padding-top: 15px;
+  padding-right: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.photo__add-comment .photo__text-area {
+  width: 90%;
+  height: 20px;
+  border: 0;
+  resize: none;
+  margin-right: 10px;
+}
+
+.photo__add-comment .photo__text-area:focus {
+  outline: none;
+}

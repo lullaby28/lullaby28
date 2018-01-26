@@ -4,11 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Logrin | Tiagram</title>
+    <title>Login | Tiagram</title>
 </head>
 
 <body>
+    <header></header>
 
     <main class="login">
         <div class="login__column">
@@ -18,7 +21,7 @@
             <div class="login__box">
                 <img src="image/logo.png" alt="Logo" class="login__logo">
 
-                <form action="feed.html" method="post">
+                <form action="feed.html" method="post" class="login__form">
                     <input placeholder="username" type="text" name="username" required>
                     <input placeholder="password" type="password" name="password" required>
                     <input type="submit" value="Log In">
@@ -26,18 +29,20 @@
 
                 <span class="login__or">or</span>
                 <a href="#" class="login__link login__link--dark">
-                    <i class="fa fa-facebook-square" aria-hidden="true"></i>Log in with Facebook</a>
+                    <i class="fa fa-facebook-square" aria-hidden="true"></i> Log in with Facebook</a>
                 <a href="#" class="login__link login__link--dart login__link--small">Forgot password?</a>
             </div>
             <div class="login__box">
-                <span>Don't have an account?</span>
-                <a href="#" class="login__link">Sign up</a>
+                <div>
+                    <span>Don't have an account?</span>
+                    <a href="#" class="login__link">Sign up</a>
+                </div>
             </div>
             <div class="login__box login__box--transparent">
                 <span>Get the app.</span>
                 <div class="login__appstores">
-                    <img src="image/ios.png" alt="iPhone" class="login__appstores">
-                    <img src="image/android.png " alt="Android " class="login__appstores">
+                    <img src="image/ios.png" alt="iPhone" class="login__appstore">
+                    <img src="image/android.png " alt="Android " class="login__appstore">
                 </div>
             </div>
         </div>

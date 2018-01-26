@@ -1,0 +1,10 @@
+body {
+  background-color: #fafafa;
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  min-height: 100vh;
+}

@@ -1,0 +1,116 @@
+.explore {
+  width: 600px;
+  margin-top: 80px;
+}
+
+.explore .explore__sug {
+  color: #999;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.explore .explore__users {
+  width: 100%;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.09);
+  border-radius: 3px;
+  margin-top: 10px;
+}
+
+.explore__users .explore__user {
+  height: 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.09);
+}
+/*  transition: all 2s linear;
+}
+
+.explore__users .explore__user:hover {
+  background-color: yellow;
+}
+*/
+.explore__users .explore__user:last-child {
+  border-bottom: 0;
+}
+
+.explore__user .explore__column {
+  display: flex;
+  align-items: center;
+}
+
+.explore__column .explore__image {
+  width: 60px;
+  border: 1px solid rgba(0, 0, 0, 0.09);
+  border-radius: 50%;
+  margin-right: 15px;
+}
+/*  animation: avata 2s ease-out;
+}
+
+@keyframes avata {
+  0% {
+    transform: translateY(0px);
+  }
+  10% {
+    transform: translateY(-20px);
+  }
+  20% {
+    transform: translateY(0px);
+  }
+  30% {
+    transform: translateY(-10px);
+  }
+  40% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  60% {
+    transform: translateY(0px);
+  }
+  70% {
+    transform: translateY(-2px);
+  }
+  80% {
+    transform: translateY(0px);
+  }
+  90% {
+    transform: translateY(-1px);
+  }
+  100% {
+    transform: translateY(0px);
+}
+*/
+.explore__name .explore__username {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.explore__name .explore__fullname {
+  color: #999;
+}
+
+.explore__column .explore__button {
+  background-color: #3897f0;
+  color: white;
+  font-weight: bold;
+  padding: 7px 10px;
+  border: 0;
+  border-radius: 3px;
+}
+
+.explore__column .explore__image:hover,
+.explore__name .explore__username:hover,
+.explore__column .explore__button:hover {
+  cursor: pointer;
+}
+
+.explore__column .explore__button:active {
+  outline: none;
+  opacity: 0.8;
+}

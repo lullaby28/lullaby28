@@ -4,75 +4,186 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Feed | Tiagram</title>
 </head>
 
 <body>
     <header class="header">
-        <div class="header__logo">
-            <a href="feed.html">
-                <img src="image/logo_header.png" class="header__image">
-            </a>
+        <div class="header__container">
+            <div class="header__logo">
+                <a href="feed.html">
+                    <img src="image/logo_header.png" class="header__image">
+                </a>
+            </div>
+            <form>
+                <input placeholder="Search" type="text" name="search">
+            </form>
+            <nav class="header__navigation">
+                <ul class="header__list">
+                    <li class="header__list-item">
+                        <a href="explore.html" class="header__link">
+                            <i class="fa fa-compass" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li class="header__list-item">
+                        <a href="#" class="header__link">
+                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li class="header__list-item">
+                        <a href="#" class="header__link">
+                            <i class="fa fa-user-o" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-        <form>
-            <input placeholder="Search" type="text" name="search">
-        </form>
-        <nav class="header__navigation">
-            <ul class="header__list">
-                <li class="header__list-item">
-                    <a href="explore.html" class="header__link">
-                        <i class="fa fa-compass" aria-hidden="true"></i>
-                    </a>
-                </li>
-                <li class="header__list-item">
-                    <a href="#" class="header__link">
-                        <i class="fa fa-heart-o" aria-hidden="true"></i>
-                    </a>
-                </li>
-                <li class="header__list-item">
-                    <a href="#" class="header__link">
-                        <i class="fa fa-user-o" aria-hidden="true"></i>
-                    </a>
-                </li>
-            </ul>
-        </nav>
     </header>
 
     <main class="feed">
         <div class="photo">
             <header class="photo__header">
-                <img src="image/user.jpg" class="header__image">
-                <a href="#" class="header__user">user name</a>
+                <img src="image/user.jpg" class="photo__avatar">
+                <div class="photo__user">
+                    <span class="photo__username">Erin</span>
+                    <span class="photo__location">Chiang Mai</span>
+                </div>
             </header>
-            <img src="image/photo.png" class="photo__image">
-            <div class="photo__text">
-                <div class="photo__icons">
-                    <a href="#" class="photo__icon">
-                        <i class="fa fa-heart" aria-hidden="true"></i>
-                    </a>
-                    <a href="#" class="photo__icon">
-                        <i class="fa fa-comment-o" aria-hidden="true"></i>
-                    </a>
+            <img src="image/photo.png" class="photo__file">
+            <div class="photo__actions">
+                <div class="photo__click">
+                    <div class="photo__like">
+                        <span class="photo__action">
+                            <i class="fa fa-heart" aria-hidden="true"></i>
+                        </span>
+                        <span class="photo__action">
+                            <i class="fa fa-comment-o" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <div class="photo_bookmark">
+                        <span class="photo__action">
+                            <i class="fa fa-bookmark-o" aria-hidden="true"></i>
+                        </span>
+                    </div>
                 </div>
-                <div class="photo__icons">
-                    <a href="#" class="photo__icon">
-                        <i class="fa fa-bookmark-o" aria-hidden="true"></i>
-                    </a>
-                </div>
-                <span class="photo__views">14,490 views</span>
+                <div class="photo__likes">14,490 likes</div>
                 <ul class="photo__comments">
                     <li class="photo__comment">
-                        <span class="photo__comment--name">user name</span>
+                        <span class="photo__comment-author">user name</span>
+                        comment something
+                    </li>
+                    <li class="photo__comment">
+                        <span class="photo__comment-author">user name</span>
+                        comment something
+                    </li>
+                    <li class="photo__comment">
+                        <span class="photo__comment-author">user name</span>
                         comment something
                     </li>
                 </ul>
-                <span class="photo__time">2 days ago</span>
-                <div class="textarea">
-                    <textarea class="text"></textarea>
-                    <a href="#" class="textarea__icon">
-                        <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
-                    </a>
+                <div class="photo__date">2 days ago</div>
+                <div class="photo__add-comment">
+                    <textarea placeholder="Add a comment..." class="photo__text-area"></textarea>
+                    <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                </div>
+
+            </div>
+        </div>
+        <div class="photo">
+            <header class="photo__header">
+                <img src="image/user.jpg" class="photo__avatar">
+                <div class="photo__user">
+                    <span class="photo__username">Erin</span>
+                    <span class="photo__location">Chiang Mai</span>
+                </div>
+            </header>
+            <img src="image/photo.png" class="photo__file">
+            <div class="photo__actions">
+                <div class="photo__click">
+                    <div class="photo__like">
+                        <span class="photo__action">
+                            <i class="fa fa-heart" aria-hidden="true"></i>
+                        </span>
+                        <span class="photo__action">
+                            <i class="fa fa-comment-o" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <div class="photo_bookmark">
+                        <span class="photo__action">
+                            <i class="fa fa-bookmark-o" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                </div>
+                <div class="photo__likes">14,490 likes</div>
+                <ul class="photo__comments">
+                    <li class="photo__comment">
+                        <span class="photo__comment-author">user name</span>
+                        comment something
+                    </li>
+                    <li class="photo__comment">
+                        <span class="photo__comment-author">user name</span>
+                        comment something
+                    </li>
+                    <li class="photo__comment">
+                        <span class="photo__comment-author">user name</span>
+                        comment something
+                    </li>
+                </ul>
+                <div class="photo__date">2 days ago</div>
+                <div class="photo__add-comment">
+                    <textarea placeholder="Add a comment..." class="photo__text-area"></textarea>
+                    <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                </div>
+
+            </div>
+        </div>
+        <div class="photo">
+            <header class="photo__header">
+                <img src="image/user.jpg" class="photo__avatar">
+                <div class="photo__user">
+                    <span class="photo__username">Erin</span>
+                    <span class="photo__location">Chiang Mai</span>
+                </div>
+            </header>
+            <img src="image/photo.png" class="photo__file">
+            <div class="photo__actions">
+                <div class="photo__click">
+                    <div class="photo__like">
+                        <span class="photo__action">
+                            <i class="fa fa-heart" aria-hidden="true"></i>
+                        </span>
+                        <span class="photo__action">
+                            <i class="fa fa-comment-o" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <div class="photo_bookmark">
+                        <span class="photo__action">
+                            <i class="fa fa-bookmark-o" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                </div>
+                <div class="photo__likes">14,490 likes</div>
+                <ul class="photo__comments">
+                    <li class="photo__comment">
+                        <span class="photo__comment-author">user name</span>
+                        comment something
+                    </li>
+                    <li class="photo__comment">
+                        <span class="photo__comment-author">user name</span>
+                        comment something
+                    </li>
+                    <li class="photo__comment">
+                        <span class="photo__comment-author">user name</span>
+                        comment something
+                    </li>
+                </ul>
+                <div class="photo__date">2 days ago</div>
+                <div class="photo__add-comment">
+                    <textarea placeholder="Add a comment..." class="photo__text-area"></textarea>
+                    <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
                 </div>
 
             </div>
