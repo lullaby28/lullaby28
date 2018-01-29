@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Explore{% endblock %}
+
+{% block content %}
+    <main class="explore">
+        <span class="explore__sug">Suggested</span>
+        <ul class="explore__users">
+            {% for user in users %}
+            <li class="explore__user">
+                <div class="explore__column">
+                    <img src="{% static 'image/user.jpg'%}" class="explore__image">
+                    <div class="explore__name">
+                        <span class="explore__username">{{user.username}}</span>
+                        <span class="explore__fullname">{{user.get_full_name}}</span>
+                    </div>
+                </div>
+                <div class="explore__column">
+                    <button class="explore__button">Follow</button>
+                </div>
+            </li>
+            {% endfor %}
+        </ul>
+    </main>
+{% endblock %}

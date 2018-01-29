@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Profile{% endblock %}
+
+{% block content %}
+<main class="profile">
+<div class="my">
+    <div class="my__column">
+        <img src="{% static 'image/user.jpg' %}" class="my__photo">
+    </div>    
+    <div class="my__column">
+        <div class="my__row">
+            <span class="my__name">{{user.username}}</span>
+            <button class="my__edit">Edit Profile</button>
+            <a href="#" class="my__settings">
+                <i class="fa fa-cog" aria-hidden="true"></i>
+            </a>
+        </div>
+        <div class="my__row">
+            <ul class="my__action">
+                <li class="my__count">
+                    <span class="my__count--number">{{user.image_set.all.count}}</span>
+                    <span class="my__count--text"> posts</span>
+                </li>
+                <li class="my__count">
+                    <span class="my__count--number">123</span>
+                    <span class="my__count--text"> followers</span>
+                </li>
+                <li class="my__count">
+                    <span class="my__count--number">456</span>
+                    <span class="my__count--text"> followings</span>
+                </li>
+            </ul>
+        </div>
+        <div class="my__row">
+            <span class="my__fullname">{{user.get_full_name}}</span>
+        </div>
+        <div class="my__column"></div>
+    </div>
+</div>
+<div class="posts">
+    <div class="posts__header">
+        <span class="posts__header--selected">posts</span>
+        <span class="posts__header--unselected">saved</span>
+    </div>
+    <div class="posts__photo">
+        {% for image in user.image_set.all %}
+        <img src="/media/{{image.file}}" class="posts__photo--posted">
+        {% endfor %}
+    </div>
+</div>
+
+</main>
+
+{% endblock %}

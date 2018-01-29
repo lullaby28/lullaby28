@@ -1,0 +1,105 @@
+.profile {
+  max-width: 935px;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.my {
+  height: 255px;
+  padding: 45px 70px;
+  display: flex;
+  align-items: center;
+}
+
+.my .my__column {
+  margin-right: 95px;
+}
+
+.my__column .my__photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.09);
+}
+
+.my__column .my__row {
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+}
+
+.my__row .my__name {
+  font-size: 30px;
+  margin-right: 25px;
+}
+
+.my__row .my__edit {
+  padding: 5px 25px;
+  font-weight: bold;
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  margin-right: 8px;
+}
+
+.my__row .my__settings {
+  font-size: 25px;
+}
+
+.my__row .my__action {
+  display: flex;
+  font-size: 15px;
+}
+
+.my__action .my__count {
+  margin-right: 40px;
+}
+
+.my__count .my__count--number {
+  font-weight: bold;
+}
+
+.my__row .my__fullname {
+  font-size: 15px;
+  font-weight: bold;
+}
+.profile .posts {
+  width: 100%;
+}
+.posts .posts__header {
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.posts__header .posts__header--selected,
+.posts__header .posts__header--unselected {
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.posts__header .posts__header--selected {
+  border-top: 2px solid balck;
+  font-weight: bold;
+  margin-right: 60px;
+}
+
+.posts__header .posts__header--unselected {
+  color: #999;
+}
+
+.posts .posts__photo {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.posts__photo .posts__photo--posted {
+  width: 31%;
+  max-width: 292px;
+  height: 31%;
+  max-height: 292px;
+  margin-bottom: 30px;
+}

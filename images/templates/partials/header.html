@@ -1,0 +1,32 @@
+{% load static %}
+<header class="header">
+    <div class="header__container">
+        <div class="header__logo">
+            <a href={% url 'home' %}>
+                <img src="{% static 'image/logo_header.PNG'%}" class="header__image">
+            </a>
+        </div>
+        <form>
+            <input placeholder="Search" type="text" name="search">
+        </form>
+        <nav class="header__navigation">
+            <ul class="header__list">
+                <li class="header__list-item">
+                    <a href={% url 'explore' %} class="header__link">
+                        <i class="fa fa-compass" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="header__list-item">
+                    <a href="#" class="header__link">
+                        <i class="fa fa-heart-o" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="header__list-item">
+                    <a href={% url 'profile' %} class="header__link">
+                        <i class="fa fa-user-o" aria-hidden="true"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>

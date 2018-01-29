@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Feed{% endblock %}
+
+{% block content %}
+    <main class="feed">
+
+        <form action="{% url 'upload' %}" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <input type="file" name="file" required>
+            <input type="text" name="location" required placeholder="Location">
+            <input type="text" name="caption" required placeholder="Caption">
+            <input type="submit" value="Upload photo">
+        </form>
+
+        {% for image in images %}
+        <div class="photo">
+            <header class="photo__header">
+                <img src="{% static 'image/user.jpg'%}" class="photo__avatar">
+                <div class="photo__user">
+                    <span class="photo__username">{{image.created_by.username}}</span>
+                    <span class="photo__location">{{image.location}}</span>
+                </div>
+            </header>
+            <img src="media/{{image.file}}" class="photo__file">
+            <div class="photo__actions">
+                <div class="photo__click">
+                    <div class="photo__like">
+                        <span class="photo__action">
+                            <i class="fa fa-heart" aria-hidden="true"></i>
+                        </span>
+                        <span class="photo__action">
+                            <i class="fa fa-comment-o" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <div class="photo_bookmark">
+                        <span class="photo__action">
+                            <i class="fa fa-bookmark-o" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                </div>
+                <div class="photo__likes">{{image.like_set.all.count}} likes</div>
+                <ul class="photo__comments">
+                    <li class="photo__comment">
+                        <span class="photo__comment-author">{{image.created_by.username}}</span>
+                        {{image.caption}}
+                    </li>
+                    {% for comment in image.comment_set.all %}
+                    <li class="photo__comment">
+                        <span class="photo__comment-author">{{comment.created_by.username}}</span>
+                        {{comment.message}}
+                    </li>
+                    {% endfor %}
+                </ul>
+                <div class="photo__date">{{image.created_at}}</div>
+                <div class="photo__add-comment">
+                    <textarea placeholder="Add a comment..." class="photo__text-area"></textarea>
+                    <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                </div>
+
+            </div>
+        </div>
+        {% endfor %}
+    </main>
+{% endblock%}

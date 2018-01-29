@@ -47,6 +47,35 @@
   .explore__users .explore__user {
     border-bottom: 0;
   }
+
+  .profile {
+    margin-top: 5px;
+  }
+
+  .my {
+    height: 170px;
+    padding: 25px 15px;
+    display: flex;
+    align-items: center;
+  }
+
+  .my .my__column {
+    margin-right: 30px;
+  }
+
+  .my__column .my__photo {
+    width: 77px;
+    height: 77px;
+  }
+
+  .my__column .my__row:nth-child(2) {
+    display: none;
+  }
+
+  .my__row .my__name {
+    font-size: 20px;
+  }
+
   .footer {
     max-width: 400px;
     flex-direction: column;

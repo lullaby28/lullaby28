@@ -24,9 +24,9 @@ class Comment(models.Model):
         return f'{self.created_for.caption} - {self.message}'
 
 class Like(models.Model):
-    created_by = models.ForeignKey(User, on_delete=models.CASCADE, null=True)
+    created_for = models.ForeignKey(Image, on_delete=models.CASCADE, null=True)
     updated_at = models.DateTimeField(auto_now=True)
     created_at = models.DateTimeField(auto_now_add=True)
-    
+
     def __str__(self):
-        return f'{self.created_by}'
+        return f'{self.created_for}'
